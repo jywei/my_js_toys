@@ -1,16 +1,21 @@
 {
-  "extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
   "plugins": [
+    "flowtype",
     "compat"
   ],
   "rules": {
     "semi": [2, "never"],
     "no-unexpected-multiline": 2,
+    "compat/compat": 2,
     "space-before-function-paren": ["error", {
       "anonymous": "always",
       "named": "always",
       "asyncArrow": "ignore"
-    }],
-    "compat/compat": 2
-  }
+    }]
+  },
+  "parser": "babel-eslint"
 }
