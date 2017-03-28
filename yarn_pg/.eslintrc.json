@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "semi": [2, "never"],
+    "no-unexpected-multiline": 2,
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "always",
+      "asyncArrow": "ignore"
+    }]
+  }
+}
