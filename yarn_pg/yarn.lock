@@ -583,7 +583,7 @@ babel-register@^6.24.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0:
+babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.23.0.tgz#0a9489f144de70efb3ce4300accdb329e2fc543b"
   dependencies:
@@ -668,6 +668,13 @@ braces@^1.8.2:
     preserve "^0.2.0"
     repeat-element "^1.1.2"
 
+browserslist@1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-1.7.5.tgz#eca4713897b51e444283241facf3985de49a9e2b"
+  dependencies:
+    caniuse-db "^1.0.30000624"
+    electron-to-chromium "^1.2.3"
+
 browserslist@^1.4.0:
   version "1.7.7"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-1.7.7.tgz#0bd76704258be829b2398bb50e4b62d1a166b0b9"
@@ -693,7 +700,11 @@ callsites@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-0.2.0.tgz#afab96262910a7f33c19a5775825c69f34e350ca"
 
-caniuse-db@^1.0.30000639:
+caniuse-db@1.0.30000626:
+  version "1.0.30000626"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000626.tgz#44363dc86857efaf758fea9faef6a15ed93d8f33"
+
+caniuse-db@^1.0.30000624, caniuse-db@^1.0.30000639:
   version "1.0.30000644"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000644.tgz#9d7eccf1ef1d11cbd6741b9fb390f9923ff42261"
 
@@ -887,7 +898,7 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
 
-electron-to-chromium@^1.2.6, electron-to-chromium@^1.2.7:
+electron-to-chromium@^1.2.3, electron-to-chromium@^1.2.6, electron-to-chromium@^1.2.7:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.2.8.tgz#22c2e6200d350da27d6050db7e3f6f85d18cf4ed"
 
@@ -1001,6 +1012,15 @@ eslint-module-utils@^2.0.0:
   dependencies:
     debug "2.2.0"
     pkg-dir "^1.0.0"
+
+eslint-plugin-compat@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-compat/-/eslint-plugin-compat-1.0.2.tgz#914a8fb93a96950140ff902ad2890930e901046c"
+  dependencies:
+    babel-runtime "^6.23.0"
+    browserslist "1.7.5"
+    caniuse-db "1.0.30000626"
+    requireindex "^1.1.0"
 
 eslint-plugin-import@^2.2.0:
   version "2.2.0"
@@ -2080,6 +2100,10 @@ require-uncached@^1.0.2:
   dependencies:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
+
+requireindex@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
 
 resolve-from@^1.0.0:
   version "1.0.1"
