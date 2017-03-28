@@ -5,12 +5,13 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node src",
-    "test": "eslint src && flow"
+    "test": "eslint src && flow && jest --coverage"
   },
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-eslint": "^7.2.1",
+    "babel-jest": "^19.0.0",
     "babel-preset-env": "^1.2.2",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^3.18.0",
@@ -20,7 +21,8 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
     "eslint-plugin-react": "^6.9.0",
-    "flow-bin": "^0.42.0"
+    "flow-bin": "^0.42.0",
+    "jest": "^19.0.2"
   },
   "browserslist": [
     "> 1%"
