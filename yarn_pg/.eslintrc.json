@@ -15,10 +15,12 @@
       "anonymous": "always",
       "named": "always",
       "asyncArrow": "ignore"
-    }]
+    }],
+    "comma-dangle": ["error", "never"]
   },
   "parser": "babel-eslint",
   "env": {
+    "browser": true,
     "jest": true
   }
 }
