@@ -1,3 +1,5 @@
+// @flow
+
 import path from 'path'
 
 import { WDS_PORT } from './src/shared/config'
