@@ -15,7 +15,7 @@ import Tether from 'tether'
 
 import App from '../shared/app'
 import helloReducer from '../shared/reducer/hello'
-import { APP_CONTAINER_SELECTOR } from '../shared/config'
+import { APP_CONTAINER_SELECTOR, JSS_SSR_SELECTOR } from '../shared/config'
 import { isProd } from '../shared/util'
 import setUpSocket from './socket'
 
@@ -34,6 +34,12 @@ const store = createStore(combineReducers(
   composeEnhancers(applyMiddleware(thunkMiddleware)))
 
 const rootEl = document.querySelector(APP_CONTAINER_SELECTOR)
+
+const jssServerSide = document.querySelector(JSS_SSR_SELECTOR)
+// flow-disable-next-line
+jssServerSide.parentNode.removeChild(jssServerSide)
+
+setUpSocket(store)
 
 const wrapApp = (AppComponent, reduxStore) =>
   <Provider store={reduxStore}>
