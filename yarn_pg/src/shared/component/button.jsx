@@ -4,7 +4,7 @@ import React from 'react'
 
 type Props = {
   label: string,
-  handleClick: Function,
+  handleClick: Function
 }
 
 const Button = ({ label, handleClick }: Props) =>
